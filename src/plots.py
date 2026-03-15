@@ -23,7 +23,7 @@ FEATURES_MAIN = [
     ("spec_peak_ratio", "Spectral peak / mean"),
 ]
 
-def set_academic_style():
+def configure_figure_style():
     sns.set_theme(context="paper", style="whitegrid", font_scale=1.1)
     plt.rcParams.update({
         "figure.dpi": 120,
@@ -120,7 +120,7 @@ def plot_confusion_matrix_lr(df: pd.DataFrame):
     savefig("confusion_matrix_lr_3class")
 
 def main():
-    set_academic_style()
+    configure_figure_style()
     df = pd.read_parquet(IN_FILE)
 
     df = df.replace([np.inf, -np.inf], np.nan).dropna()

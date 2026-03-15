@@ -21,19 +21,12 @@ This project investigates whether different random number generators can be dist
 - `csprng`  
   `urandom`, `secrets`
 
-## Example figure
+## Models
 
-### Logistic Regression confusion matrix
+The current implementation compares two supervised classification models:
 
-The confusion matrix shows that the weak generator class is clearly separable, while the `prng` and `csprng` classes remain harder to distinguish.
-
-![Confusion matrix](data/results/confusion_matrix_lr_3class.png)
-
-## Feature importance
-
-Random Forest feature importances are saved to:
-
-`data/results/rf_feature_importance.csv`  
+- Logistic Regression
+- Random Forest 
 
 ## Project structure
 
