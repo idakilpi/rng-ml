@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+
+data/raw/
+data/features/
+data/results/
+
+.DS_Store
